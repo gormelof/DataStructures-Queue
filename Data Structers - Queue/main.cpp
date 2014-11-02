@@ -48,7 +48,7 @@ void dequeue () {
         for (int i = 0; i < last; i++) { // shifting
             queue[i] = queue [i+1];
         }
-        queue[last] = 0;
+        queue[last] = 0; // Null
     }
     else {
         cout << "Empty...\n";
@@ -62,6 +62,31 @@ void showQueue () {
 }
 
 int main(int argc, const char * argv[]) {
-
+    maxLength = 5; // queue size
+    last = 0; // queue last/end
+    
+    int select;
+    
+    while (select != 4) {
+        cout << "(1) Enqueue\n(2) Dequeue\n(3) Show queue\n(4) Exit"; // Menu
+        cout << "\nSelect : ";
+        cin  >> select;
+        
+        switch (select) {
+            case 1:
+                enqueue();
+                break;
+            case 2:
+                dequeue();
+                break;
+            case 3:
+                showQueue();
+                break;
+            default:
+                cout << "Try again...\n";
+                break;
+        }
+    }
+    
     return 0;
 }
