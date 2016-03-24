@@ -1,4 +1,4 @@
-DataStructers-Queue
+DataStructures-Queue
 ===================
 
 A simple example of the Queue
