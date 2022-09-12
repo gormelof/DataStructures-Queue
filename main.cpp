@@ -3,7 +3,6 @@
 //  Data Structers - Queue
 //
 //  Created by Ömer Faruk Görmel on 02/11/14.
-//  Copyright (c) 2014 gormelof. All rights reserved.
 //
 
 #include <iostream>
